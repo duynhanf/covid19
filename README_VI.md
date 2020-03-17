@@ -17,11 +17,7 @@ Chi tiết vui lòng xem [tại đây](./.github/CODE_OF_CONDUCT_VI.md)
 ## Giấy phép
 Phần mềm này được phân phối dưới giấy phép [MIT](./LICENSE.txt)
 
-[PLEASE TRANSLATE ME]
-
-Please check [How to translate](./.github/TRANSLATION.md) doc.
-
-[/PLEASE TRANSLATE ME]
+Vui lòng check tài liệu này [How to translate](./.github/TRANSLATION.md)
 
 ## Thông tin cho nhà phát triển
 
@@ -44,18 +40,19 @@ $ yarn dev
 $ docker-compose up --build
 ```
 
-[PLEASE TRANSLATE ME]
-### VSCode + Remote Containersで開発する場合
+### Trường hợp phát triển bằng VSCode và Remote Containers
 
-1. VSCodeの拡張機能「[Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)」を導入します。
-2. [この画像（外部サイト）](https://code.visualstudio.com/docs/remote/containers#_quick-start-try-a-dev-container)のように左下部の「Open Folder in Container」でこのリポジトリのルートを選択すれば環境構築が始まります。
+1. Cài đặt [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) extension trong VSCode
+2. Nếu chọn root repository này bằng menu 「Open Folder in Container」 phía dưới bên trái như [ảnh này（external link）](https://code.visualstudio.com/docs/remote/containers#_quick-start-try-a-dev-container) thì setup môi trường sẽ bắt đầu
 
 #### Topic
-- 設定を変更したい場合は、`.devcontainer/devcontainer.json`を修正してください。
-詳細は[devcontainer.jsonのリファレンス](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)を参照してください。
-- Remote Container実行時のみ有効な拡張機能「ESLint」を導入していますが、必要に応じて`devcontainer.json`の`extensions`に追加してください。
-詳細な手順は[こちら（外部サイト）](https://code.visualstudio.com/docs/remote/containers#_managing-extensions)を参照してください。
-- 開発環境を再構築する場合は、左下部の「Rebuild Container」を実行してください。
+- Trường hợpp muốn sửa setting, hãy sửa file `.devcontainer/devcontainer.json`.
+Chi tiết thì hãy tham khảo file [devcontainer.jsonのリファレンス](https://code.visualstudio.com/docs/remote/containers#_devcontainerjson-reference)
+
+- Mặc dù 「ESLint」 extension hợp lệ cài đặt chỉ khi chạy Remote Container nhưng khi cần thiết, hãy thêm vào `extensions` trong file `devcontainer.json`
+
+Chi tiết hướng dẫn cài đặt thì bạn có thể tham khảo [tại đây(external link）](https://code.visualstudio.com/docs/remote/containers#_managing-extensions)
+- Trường hợp muốn setup lại biến môi trường hãy chạy lại 「Rebuild Container」 phía dưới bên trái
 
 ### Detect production/others environment
 
